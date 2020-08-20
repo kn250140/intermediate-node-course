@@ -10,6 +10,7 @@ app.listen(port, ()=>{
 	console.log(`server is listening on port:${port}`)
 	const User=require('./models/User');
 mongoose.connect('mongodb://localhost/userData')
+	db.users.insertOne({name:"octocat",email:"octo@cat.com",password:"password"})
 })
 
 // CREATE
